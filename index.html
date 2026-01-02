@@ -88,12 +88,31 @@
       margin-bottom: 8px;
     }
 
-    .contact a {
-      display: block;
-      margin-bottom: 6px;
-      color: #0b7c82;
-      text-decoration: none;
-    }
+    .contact-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.contact-list li {
+  margin-bottom: 12px;
+}
+
+.contact-list a {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 16px;
+  color: #0b7c82;
+  text-decoration: none;
+}
+
+.contact-list i {
+  font-size: 18px;
+  width: 22px;
+  text-align: center;
+}
+
 
     footer {
       background: #0b7c82;
@@ -118,6 +137,13 @@
   background: #095f64;
 }
   </style>
+  
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+/>
+
+  
 </head>
 
 <body>
@@ -284,13 +310,32 @@
     </ul>
   </div>
 
-  <!-- Contact -->
-  <h2>Contact</h2>
-  <div class="card contact">
-    <a href="mailto:sharathchandhra25@gmail.com">📧 sharathchandhra25@gmail.com</a>
-    <a href="https://www.linkedin.com/in/inturisharathchandhra/" target="_blank">🔗 LinkedIn</a>
-    <a href="https://github.com/SharathChandhraInturi" target="_blank">💻 GitHub</a>
-  </div>
+ <!-- Contact -->
+<h2>Contact</h2>
+<div class="card">
+  <ul class="contact-list">
+    <li>
+      <a href="mailto:sharathchandhra25@gmail.com">
+        <i class="fas fa-envelope"></i>
+        sharathchandhra25@gmail.com
+      </a>
+    </li>
+
+    <li>
+      <a href="https://github.com/SharathChandhraInturi" target="_blank">
+        <i class="fab fa-github"></i>
+        GitHub
+      </a>
+    </li>
+
+    <li>
+      <a href="https://www.linkedin.com/in/inturisharathchandhra/" target="_blank">
+        <i class="fab fa-linkedin"></i>
+        LinkedIn
+      </a>
+    </li>
+  </ul>
+</div>
 
 </div>
 
